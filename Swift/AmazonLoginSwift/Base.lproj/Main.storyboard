@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zVc-Dh-SeN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="lxj-h4-C7a">
+            <objects>
+                <viewController id="zVc-Dh-SeN" customClass="LoginViewController" customModule="AmazonLoginSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNm-P8-Zs9"/>
+                        <viewControllerLayoutGuide type="bottom" id="pja-YY-3Rt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DTW-A9-c1v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8y-uU-yUT">
+                                <rect key="frame" x="20" y="340" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.52535021550000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1q6-28-bm5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="zVc-Dh-SeN" eventType="touchUpInside" id="t8g-wb-bg5"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mg1-tc-tep">
+                                <rect key="frame" x="251" y="284" width="98" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-qb-uja">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Alexa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZ4-ft-swD">
+                                        <rect key="frame" x="59" y="0.0" width="39" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="t8y-uU-yUT" secondAttribute="trailing" id="7TP-Aj-jLv"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="leading" secondItem="DTW-A9-c1v" secondAttribute="leadingMargin" id="9sv-N5-gmi"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="centerY" secondItem="DTW-A9-c1v" secondAttribute="centerY" multiplier="1.2" id="Rb1-uy-9hE"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="centerX" secondItem="DTW-A9-c1v" secondAttribute="centerX" id="XjV-7d-qZL"/>
+                            <constraint firstItem="mg1-tc-tep" firstAttribute="centerX" secondItem="DTW-A9-c1v" secondAttribute="centerX" id="YmP-yW-4qN"/>
+                            <constraint firstItem="mg1-tc-tep" firstAttribute="centerY" secondItem="DTW-A9-c1v" secondAttribute="centerY" id="vhO-TX-aDe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alexaSwitch" destination="6hm-qb-uja" id="Ir1-9y-Cz1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sX2-kD-Rdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-32" y="735"/>
+        </scene>
+    </scenes>
+</document>

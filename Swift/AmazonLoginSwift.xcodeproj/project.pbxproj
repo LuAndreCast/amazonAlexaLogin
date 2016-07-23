@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE99CFF41D4301D100EB8FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CFF31D4301D100EB8FB1 /* AppDelegate.swift */; };
+		DE99CFF61D4301D100EB8FB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CFF51D4301D100EB8FB1 /* LoginViewController.swift */; };
+		DE99CFF91D4301D100EB8FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99CFF71D4301D100EB8FB1 /* Main.storyboard */; };
+		DE99CFFB1D4301D100EB8FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99CFFA1D4301D100EB8FB1 /* Assets.xcassets */; };
+		DE99CFFE1D4301D100EB8FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99CFFC1D4301D100EB8FB1 /* LaunchScreen.storyboard */; };
+		DE99D0061D4303FB00EB8FB1 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE99D0051D4303FB00EB8FB1 /* LoginWithAmazon.framework */; };
+		DE99D0121D4313EF00EB8FB1 /* AMZNGetAccessTokenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0111D4313EF00EB8FB1 /* AMZNGetAccessTokenDelegate.swift */; };
+		DE99D0161D43160F00EB8FB1 /* AMZNAuthorizeUserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0131D43160F00EB8FB1 /* AMZNAuthorizeUserDelegate.swift */; };
+		DE99D0171D43160F00EB8FB1 /* AMZNGetProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0141D43160F00EB8FB1 /* AMZNGetProfileDelegate.swift */; };
+		DE99D0181D43160F00EB8FB1 /* AMZNLogoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0151D43160F00EB8FB1 /* AMZNLogoutDelegate.swift */; };
+		DE99D01A1D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0191D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE99CFF01D4301D100EB8FB1 /* AmazonLoginSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazonLoginSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE99CFF31D4301D100EB8FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE99CFF51D4301D100EB8FB1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DE99CFF81D4301D100EB8FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE99CFFA1D4301D100EB8FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE99CFFD1D4301D100EB8FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE99CFFF1D4301D100EB8FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE99D0051D4303FB00EB8FB1 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = Frameworks/LoginWithAmazon.framework; sourceTree = "<group>"; };
+		DE99D00C1D43060D00EB8FB1 /* AmazonLoginSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazonLoginSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE99D0111D4313EF00EB8FB1 /* AMZNGetAccessTokenDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMZNGetAccessTokenDelegate.swift; path = "amazon login/AMZNGetAccessTokenDelegate.swift"; sourceTree = "<group>"; };
+		DE99D0131D43160F00EB8FB1 /* AMZNAuthorizeUserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMZNAuthorizeUserDelegate.swift; path = "amazon login/AMZNAuthorizeUserDelegate.swift"; sourceTree = "<group>"; };
+		DE99D0141D43160F00EB8FB1 /* AMZNGetProfileDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMZNGetProfileDelegate.swift; path = "amazon login/AMZNGetProfileDelegate.swift"; sourceTree = "<group>"; };
+		DE99D0151D43160F00EB8FB1 /* AMZNLogoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMZNLogoutDelegate.swift; path = "amazon login/AMZNLogoutDelegate.swift"; sourceTree = "<group>"; };
+		DE99D0191D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmazonLoginDelegate.swift; path = "amazon login/AmazonLoginDelegate.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE99CFED1D4301D100EB8FB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE99D0061D4303FB00EB8FB1 /* LoginWithAmazon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE99CFE71D4301D100EB8FB1 = {
+			isa = PBXGroup;
+			children = (
+				DE99CFF21D4301D100EB8FB1 /* AmazonLoginSwift */,
+				DE99CFF11D4301D100EB8FB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE99CFF11D4301D100EB8FB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE99CFF01D4301D100EB8FB1 /* AmazonLoginSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE99CFF21D4301D100EB8FB1 /* AmazonLoginSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DE99D00C1D43060D00EB8FB1 /* AmazonLoginSwift-Bridging-Header.h */,
+				DE99CFF31D4301D100EB8FB1 /* AppDelegate.swift */,
+				DE99D00A1D43042100EB8FB1 /* Models */,
+				DE99D0081D43041300EB8FB1 /* Controllers */,
+				DE99D0071D43040C00EB8FB1 /* Views */,
+				DE99D0091D43041800EB8FB1 /* Resources */,
+				DE99D00B1D43042800EB8FB1 /* Frameworks */,
+			);
+			path = AmazonLoginSwift;
+			sourceTree = "<group>";
+		};
+		DE99D0071D43040C00EB8FB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE99CFF71D4301D100EB8FB1 /* Main.storyboard */,
+				DE99CFFC1D4301D100EB8FB1 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DE99D0081D43041300EB8FB1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE99CFF51D4301D100EB8FB1 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DE99D0091D43041800EB8FB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE99CFFA1D4301D100EB8FB1 /* Assets.xcassets */,
+				DE99CFFF1D4301D100EB8FB1 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DE99D00A1D43042100EB8FB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE99D0191D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift */,
+				DE99D0111D4313EF00EB8FB1 /* AMZNGetAccessTokenDelegate.swift */,
+				DE99D0131D43160F00EB8FB1 /* AMZNAuthorizeUserDelegate.swift */,
+				DE99D0141D43160F00EB8FB1 /* AMZNGetProfileDelegate.swift */,
+				DE99D0151D43160F00EB8FB1 /* AMZNLogoutDelegate.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DE99D00B1D43042800EB8FB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE99D0051D4303FB00EB8FB1 /* LoginWithAmazon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE99CFEF1D4301D100EB8FB1 /* AmazonLoginSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE99D0021D4301D100EB8FB1 /* Build configuration list for PBXNativeTarget "AmazonLoginSwift" */;
+			buildPhases = (
+				DE99CFEC1D4301D100EB8FB1 /* Sources */,
+				DE99CFED1D4301D100EB8FB1 /* Frameworks */,
+				DE99CFEE1D4301D100EB8FB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazonLoginSwift;
+			productName = AmazonLoginSwift;
+			productReference = DE99CFF01D4301D100EB8FB1 /* AmazonLoginSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE99CFE81D4301D100EB8FB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LC;
+				TargetAttributes = {
+					DE99CFEF1D4301D100EB8FB1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DE99CFEB1D4301D100EB8FB1 /* Build configuration list for PBXProject "AmazonLoginSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE99CFE71D4301D100EB8FB1;
+			productRefGroup = DE99CFF11D4301D100EB8FB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE99CFEF1D4301D100EB8FB1 /* AmazonLoginSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE99CFEE1D4301D100EB8FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE99CFFE1D4301D100EB8FB1 /* LaunchScreen.storyboard in Resources */,
+				DE99CFFB1D4301D100EB8FB1 /* Assets.xcassets in Resources */,
+				DE99CFF91D4301D100EB8FB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE99CFEC1D4301D100EB8FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE99D0181D43160F00EB8FB1 /* AMZNLogoutDelegate.swift in Sources */,
+				DE99D0171D43160F00EB8FB1 /* AMZNGetProfileDelegate.swift in Sources */,
+				DE99D01A1D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift in Sources */,
+				DE99CFF61D4301D100EB8FB1 /* LoginViewController.swift in Sources */,
+				DE99D0161D43160F00EB8FB1 /* AMZNAuthorizeUserDelegate.swift in Sources */,
+				DE99D0121D4313EF00EB8FB1 /* AMZNGetAccessTokenDelegate.swift in Sources */,
+				DE99CFF41D4301D100EB8FB1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE99CFF71D4301D100EB8FB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE99CFF81D4301D100EB8FB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE99CFFC1D4301D100EB8FB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE99CFFD1D4301D100EB8FB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE99D0001D4301D100EB8FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE99D0011D4301D100EB8FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE99D0031D4301D100EB8FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmazonLoginSwift/Frameworks",
+				);
+				INFOPLIST_FILE = AmazonLoginSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.AmazonLoginSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmazonLoginSwift/AmazonLoginSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE99D0041D4301D100EB8FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AmazonLoginSwift/Frameworks",
+				);
+				INFOPLIST_FILE = AmazonLoginSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LC.AmazonLoginSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AmazonLoginSwift/AmazonLoginSwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE99CFEB1D4301D100EB8FB1 /* Build configuration list for PBXProject "AmazonLoginSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE99D0001D4301D100EB8FB1 /* Debug */,
+				DE99D0011D4301D100EB8FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE99D0021D4301D100EB8FB1 /* Build configuration list for PBXNativeTarget "AmazonLoginSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE99D0031D4301D100EB8FB1 /* Debug */,
+				DE99D0041D4301D100EB8FB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE99CFE81D4301D100EB8FB1 /* Project object */;
+}
