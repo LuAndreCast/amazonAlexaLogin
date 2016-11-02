@@ -32,7 +32,7 @@ class AmazonLogin:NSObject, AmazonLoginDelegate {
     fileprivate let _delegate_logout            = AMZNLogoutDelegate()
     
     //properties
-    fileprivate let productID = "ENTER YOUR PRODUCT ID HERE" /* can be obtained at amazon developer website, the Device Type ID of the app */
+    fileprivate let productID = "UPDATE ME" /* can be obtained at amazon developer website, the Device Type ID of the app */
     
     fileprivate var alexa_requestScope:[AnyObject]  = ["alexa:all" as AnyObject]
     fileprivate var alexa_options:[AnyHashable: Any] = [:]

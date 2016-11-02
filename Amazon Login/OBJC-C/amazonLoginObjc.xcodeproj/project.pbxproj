@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F725E8C91CD931300089FA9D /* AVSObjcFTW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVSObjcFTW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F725E8C91CD931300089FA9D /* amazonLoginObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amazonLoginObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F725E8CD1CD931310089FA9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F725E8CF1CD931310089FA9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F725E8D01CD931310089FA9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		F725E8CA1CD931300089FA9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F725E8C91CD931300089FA9D /* AVSObjcFTW.app */,
+				F725E8C91CD931300089FA9D /* amazonLoginObjc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F725E8C81CD931300089FA9D /* AVSObjcFTW */ = {
+		F725E8C81CD931300089FA9D /* amazonLoginObjc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F725E8E01CD931310089FA9D /* Build configuration list for PBXNativeTarget "AVSObjcFTW" */;
+			buildConfigurationList = F725E8E01CD931310089FA9D /* Build configuration list for PBXNativeTarget "amazonLoginObjc" */;
 			buildPhases = (
 				F725E8C51CD931300089FA9D /* Sources */,
 				F725E8C61CD931300089FA9D /* Frameworks */,
@@ -189,9 +189,9 @@
 			);
 			dependencies = (
 			);
-			name = AVSObjcFTW;
+			name = amazonLoginObjc;
 			productName = AVSObjcFTW;
-			productReference = F725E8C91CD931300089FA9D /* AVSObjcFTW.app */;
+			productReference = F725E8C91CD931300089FA9D /* amazonLoginObjc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F725E8C41CD931300089FA9D /* Build configuration list for PBXProject "AVSObjcFTW" */;
+			buildConfigurationList = F725E8C41CD931300089FA9D /* Build configuration list for PBXProject "amazonLoginObjc" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,7 +221,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F725E8C81CD931300089FA9D /* AVSObjcFTW */,
+				F725E8C81CD931300089FA9D /* amazonLoginObjc */,
 			);
 		};
 /* End PBXProject section */
@@ -375,7 +375,7 @@
 				);
 				INFOPLIST_FILE = AVSObjcFTW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LC.AVSObjcFTW;
+				PRODUCT_BUNDLE_IDENTIFIER = LC.amazonLoginObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AVSObjcFTW-Bridging-Header.h";
@@ -395,7 +395,7 @@
 				);
 				INFOPLIST_FILE = AVSObjcFTW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = LC.AVSObjcFTW;
+				PRODUCT_BUNDLE_IDENTIFIER = LC.amazonLoginObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "AVSObjcFTW-Bridging-Header.h";
@@ -405,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F725E8C41CD931300089FA9D /* Build configuration list for PBXProject "AVSObjcFTW" */ = {
+		F725E8C41CD931300089FA9D /* Build configuration list for PBXProject "amazonLoginObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F725E8DE1CD931310089FA9D /* Debug */,
@@ -414,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F725E8E01CD931310089FA9D /* Build configuration list for PBXNativeTarget "AVSObjcFTW" */ = {
+		F725E8E01CD931310089FA9D /* Build configuration list for PBXNativeTarget "amazonLoginObjc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F725E8E11CD931310089FA9D /* Debug */,

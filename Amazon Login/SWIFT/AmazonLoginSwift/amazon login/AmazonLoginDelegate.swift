@@ -33,8 +33,6 @@ class AmazonLogin:NSObject, AmazonLoginDelegate {
     fileprivate let _delegate_logout            = AMZNLogoutDelegate()
     
     //properties
-    fileprivate let productID = "ENTER YOUR PRODUCT ID HERE" /* can be obtained at amazon developer website, the Device Type ID of the app */
-    
     fileprivate var amazon_requestScope:[AnyObject] = ["profile" as AnyObject, "postal_code" as AnyObject]
     
     var delegate:AmazonLoginResultsDelegate? = nil

@@ -17,6 +17,11 @@
 		DE99D0181D43160F00EB8FB1 /* AMZNLogoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0151D43160F00EB8FB1 /* AMZNLogoutDelegate.swift */; };
 		DE99D01A1D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0191D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift */; };
 		DE99D0221D456A3F00EB8FB1 /* AMZNAlexaAuthorizeUserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99D0211D456A3F00EB8FB1 /* AMZNAlexaAuthorizeUserDelegate.swift */; };
+		F7233C621DCA883100B9843E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7233C611DCA883100B9843E /* SafariServices.framework */; };
+		F7233C641DCA883C00B9843E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7233C631DCA883C00B9843E /* Security.framework */; };
+		F7233C661DCA885000B9843E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7233C651DCA885000B9843E /* CoreGraphics.framework */; };
+		F7233C681DCA885F00B9843E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7233C671DCA885F00B9843E /* Foundation.framework */; };
+		F7233C6A1DCA886500B9843E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7233C691DCA886500B9843E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		DE99D0151D43160F00EB8FB1 /* AMZNLogoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMZNLogoutDelegate.swift; path = "amazon login/AMZNLogoutDelegate.swift"; sourceTree = "<group>"; };
 		DE99D0191D43E4BE00EB8FB1 /* AmazonLoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmazonLoginDelegate.swift; path = "amazon login/AmazonLoginDelegate.swift"; sourceTree = "<group>"; };
 		DE99D0211D456A3F00EB8FB1 /* AMZNAlexaAuthorizeUserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AMZNAlexaAuthorizeUserDelegate.swift; path = "amazon login/AMZNAlexaAuthorizeUserDelegate.swift"; sourceTree = "<group>"; };
+		F7233C611DCA883100B9843E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		F7233C631DCA883C00B9843E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F7233C651DCA885000B9843E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F7233C671DCA885F00B9843E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F7233C691DCA886500B9843E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7233C6A1DCA886500B9843E /* UIKit.framework in Frameworks */,
+				F7233C681DCA885F00B9843E /* Foundation.framework in Frameworks */,
+				F7233C661DCA885000B9843E /* CoreGraphics.framework in Frameworks */,
+				F7233C641DCA883C00B9843E /* Security.framework in Frameworks */,
+				F7233C621DCA883100B9843E /* SafariServices.framework in Frameworks */,
 				DE99D0061D4303FB00EB8FB1 /* LoginWithAmazon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +67,7 @@
 			children = (
 				DE99CFF21D4301D100EB8FB1 /* AmazonLoginSwift */,
 				DE99CFF11D4301D100EB8FB1 /* Products */,
+				F7233C601DCA883100B9843E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +138,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F7233C601DCA883100B9843E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7233C691DCA886500B9843E /* UIKit.framework */,
+				F7233C671DCA885F00B9843E /* Foundation.framework */,
+				F7233C651DCA885000B9843E /* CoreGraphics.framework */,
+				F7233C631DCA883C00B9843E /* Security.framework */,
+				F7233C611DCA883100B9843E /* SafariServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +182,7 @@
 				TargetAttributes = {
 					DE99CFEF1D4301D100EB8FB1 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LM8B99RWJA;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -320,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LM8B99RWJA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AmazonLoginSwift/Frameworks",
@@ -339,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LM8B99RWJA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AmazonLoginSwift/Frameworks",

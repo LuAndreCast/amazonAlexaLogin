@@ -2,32 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>api.amazon.com</key>
-			<dict>
-				<key>NSExceptionRequiresForwardSecrecy</key>
-				<false/>
-			</dict>
-		</dict>
-	</dict>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>amzn-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-			</array>
-			<key>CFBundleURLName</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-		</dict>
-	</array>
 	<key>APIKey</key>
-	<string>ENTER YOUR API KEY HERE</string>
+	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LmE2MjY1NDdjY2ZkYzQ0ZWNhMjIxYTRiZDMzZmNkYjFlIiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi4yOGNmMzFiZjhmZmE0YmVmOGQ4OWViYTM3ODdmNGI5MCIsImJ1bmRsZVNlZWRJZCI6IkxDLmFtYXpvbkxvZ2luT2JqYyIsImJ1bmRsZUlkIjoiTEMuYW1hem9uTG9naW5PYmpjIiwiaXNzIjoiQW1hem9uIiwidHlwZSI6IkFQSUtleSIsImFwcFZhcmlhbnRJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC5jY2VlM2Q4MDk0YmI0Y2RhYWY2MmE5YTRjNjY3OWRjMiIsInRydXN0UG9vbCI6bnVsbCwiYXBwSWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1jbGllbnQuY2NlZTNkODA5NGJiNGNkYWFmNjJhOWE0YzY2NzlkYzIiLCJpZCI6IjliYWY3NDkzLWExM2UtMTFlNi1iYmZkLTVmMWRkOTUxZTI3NSIsImlhdCI6IjE0NzgxMjAwOTUzNDcifQ==.hEopxJ0OgdxqLBwK335VQaUY3OLrvS63sUPI65RFJ4ukQFy/hxwN/jn/1XqMzkBwR1LDajgP4i5u4+xrCxkDGYPipqaguugYwxZ5DwRACJIL2VL9ps55VtGHLj1nSc4wcnXBvQ+jPSw2p30H320gjo8DKpHj2WmbjOJMQTNvjuACl7e/V3qBMngsTCvxog6aSlFc1eDKno4uqhWEDVTLIV+9MQ4VTOfOFCfOpG2W0RJjo34bvoNJ94ZoIrHJiaPhvxPQchsGj+WGmrZOqS+IpADCHmsuBz10O4LVwuc8e9geIWRwuJPNd8BeC5a1TeoQcK1eNjbZ1pfWKefdJb8trw==</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -44,10 +20,34 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.amazon.com</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
