@@ -13,9 +13,9 @@ class AMZNLogoutDelegate:NSObject, AIAuthenticationDelegate {
     var delegate:AmazonLoginDelegate? = nil
     
     //MARK: Delegates
-    func requestDidSucceed(apiResult: APIResult!) {
+    func requestDidSucceed(_ apiResult: APIResult!) {
         
-        if apiResult.api == API.ClearAuthorizationState {
+        if apiResult.api == API.clearAuthorizationState {
             delegate?.logOutResult(true, error: nil)
         }
         else
@@ -25,7 +25,7 @@ class AMZNLogoutDelegate:NSObject, AIAuthenticationDelegate {
         }
     }//eom
     
-    func requestDidFail(errorResponse: APIError!) {
+    func requestDidFail(_ errorResponse: APIError!) {
         let error = errorResponse.description
         delegate?.logOutResult(false, error:error)
     }//eom

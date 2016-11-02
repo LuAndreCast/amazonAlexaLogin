@@ -10,32 +10,32 @@ import Foundation
 
 protocol AmazonLoginDelegate {
     
-    func alexa_authorizationResult(success:Bool, error:String?)
-    func alexa_accessTokenResult(success:Bool, accessToken:String?, error:String?)
-    func logOutResult(success:Bool, error:String?)
+    func alexa_authorizationResult(_ success:Bool, error:String?)
+    func alexa_accessTokenResult(_ success:Bool, accessToken:String?, error:String?)
+    func logOutResult(_ success:Bool, error:String?)
 }
 
 
 
 protocol AmazonLoginResultsDelegate {
     
-    func authorizationResult(success:Bool, accessToken:String?, error:String?)
-    func logOutResult(success:Bool, error:String?)
+    func authorizationResult(_ success:Bool, accessToken:String?, error:String?)
+    func logOutResult(_ success:Bool, error:String?)
 }
 
 
 class AmazonLogin:NSObject, AmazonLoginDelegate {
     static let sharedInstance = AmazonLogin()
     
-    private let _delegate_AlexaAuthorize    = AMZNAlexaAuthorizeUserDelegate()
-    private let _delegate_accessToken       = AMZNAlexaGetAccessTokenDelegate()
-    private let _delegate_logout            = AMZNLogoutDelegate()
+    fileprivate let _delegate_AlexaAuthorize    = AMZNAlexaAuthorizeUserDelegate()
+    fileprivate let _delegate_accessToken       = AMZNAlexaGetAccessTokenDelegate()
+    fileprivate let _delegate_logout            = AMZNLogoutDelegate()
     
     //properties
-    private let productID = "ENTER YOUR PRODUCT ID HERE" /* can be obtained at amazon developer website, the Device Type ID of the app */
+    fileprivate let productID = "ENTER YOUR PRODUCT ID HERE" /* can be obtained at amazon developer website, the Device Type ID of the app */
     
-    private var alexa_requestScope:[AnyObject]  = ["alexa:all"]
-    private var alexa_options:[NSObject:AnyObject] = [:]
+    fileprivate var alexa_requestScope:[AnyObject]  = ["alexa:all" as AnyObject]
+    fileprivate var alexa_options:[AnyHashable: Any] = [:]
     
     var delegate:AmazonLoginResultsDelegate? = nil
     
@@ -62,22 +62,22 @@ class AmazonLogin:NSObject, AmazonLoginDelegate {
     }//eom
     
     
-    private func requestAlexaAccessTokens()
+    fileprivate func requestAlexaAccessTokens()
     {
-        AIMobileLib.getAccessTokenForScopes(alexa_requestScope, withOverrideParams: alexa_options, delegate: _delegate_accessToken)
+        AIMobileLib.getAccessToken(forScopes: alexa_requestScope, withOverrideParams: alexa_options, delegate: _delegate_accessToken)
     }//eom
-    func alexa_accessTokenResult(success: Bool, accessToken: String?, error:String?) {
+    func alexa_accessTokenResult(_ success: Bool, accessToken: String?, error:String?) {
         delegate?.authorizationResult(success,accessToken: accessToken, error: error)
     }//eom
     
     //MARK: - Alexa Authorization
     func requestALEXAauth()
     {
-    AIMobileLib.authorizeUserForScopes(alexa_requestScope, delegate: _delegate_AlexaAuthorize, options: alexa_options)
+    AIMobileLib.authorizeUser(forScopes: alexa_requestScope, delegate: _delegate_AlexaAuthorize, options: alexa_options)
     }//eom
     
     
-    func alexa_authorizationResult(success: Bool, error: String?) {
+    func alexa_authorizationResult(_ success: Bool, error: String?) {
         if success
         {
             self.requestAlexaAccessTokens()
@@ -95,7 +95,7 @@ class AmazonLogin:NSObject, AmazonLoginDelegate {
         AIMobileLib .clearAuthorizationState(_delegate_logout)
     }//eom
     
-    func logOutResult(success: Bool,error:String?) {
+    func logOutResult(_ success: Bool,error:String?) {
         delegate?.logOutResult(success, error:error)
     }//eom
     

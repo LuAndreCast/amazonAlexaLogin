@@ -13,9 +13,9 @@ class AMZNAuthorizeUserDelegate:NSObject, AIAuthenticationDelegate {
     var delegate:AmazonLoginDelegate? = nil
     
     //MARK: Delegates
-    func requestDidSucceed(apiResult: APIResult!) {
+    func requestDidSucceed(_ apiResult: APIResult!) {
        
-        if apiResult.api == API.AuthorizeUser
+        if apiResult.api == API.authorizeUser
         {
             delegate?.amazon_AuthorizationResult(true, error: nil)
         }
@@ -28,7 +28,7 @@ class AMZNAuthorizeUserDelegate:NSObject, AIAuthenticationDelegate {
     }//eom
     
     
-    func requestDidFail(errorResponse: APIError!) {
+    func requestDidFail(_ errorResponse: APIError!) {
         let error = errorResponse.description
         delegate?.amazon_AuthorizationResult(false, error: error)
     }//eom

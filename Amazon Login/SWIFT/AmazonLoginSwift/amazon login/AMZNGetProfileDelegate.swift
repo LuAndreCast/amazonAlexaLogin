@@ -13,9 +13,9 @@ class AMZNGetProfileDelegate:NSObject, AIAuthenticationDelegate {
     var delegate:AmazonLoginDelegate? = nil
     
     //MARK: Delegates
-    func requestDidSucceed(apiResult: APIResult!)
+    func requestDidSucceed(_ apiResult: APIResult!)
     {
-        if let userProfile:NSDictionary? = apiResult.result as? NSDictionary
+        if let userProfile:NSDictionary = apiResult.result as? NSDictionary
         {
             delegate?.profileResult(true, profileDict: userProfile, error: nil)
         }
@@ -27,7 +27,7 @@ class AMZNGetProfileDelegate:NSObject, AIAuthenticationDelegate {
     }//eom
     
     
-    func requestDidFail(errorResponse: APIError!) {
+    func requestDidFail(_ errorResponse: APIError!) {
         let error = errorResponse.description
         delegate?.profileResult(false, profileDict: nil, error: error)
     }//eom

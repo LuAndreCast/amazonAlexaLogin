@@ -13,7 +13,7 @@ class AMZNAlexaGetAccessTokenDelegate:NSObject, AIAuthenticationDelegate {
     var delegate:AmazonLoginDelegate? = nil
     
     //MARK: Delegates
-    func requestDidSucceed(apiResult: APIResult!)
+    func requestDidSucceed(_ apiResult: APIResult!)
     {
         if let accessToken:String = apiResult.result as? String
         {
@@ -26,7 +26,7 @@ class AMZNAlexaGetAccessTokenDelegate:NSObject, AIAuthenticationDelegate {
         }
     }//eom
     
-    func requestDidFail(errorResponse: APIError!)
+    func requestDidFail(_ errorResponse: APIError!)
     {
         let error = "user not authorize. error: \(errorResponse.description)"
         delegate?.alexa_accessTokenResult(false, accessToken: nil, error: error)

@@ -19,19 +19,19 @@ class LoginViewController: UIViewController, AmazonLoginResultsDelegate {
     }//eom
 
     
-    override func viewDidAppear(animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
         amazonLogin.checkAlexaUserStatus()
     }//eom
     
     //MARK: - Login
-    @IBAction func login(sender: UIButton)
+    @IBAction func login(_ sender: UIButton)
     {
         amazonLogin.requestALEXAauth()
     }//eo-a
 
     //MARK: - Login Results
-    func authorizationResult(success: Bool, accessToken: String?, error: String?) {
+    func authorizationResult(_ success: Bool, accessToken: String?, error: String?) {
         if success
         {
             print("access token: \(accessToken)")
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, AmazonLoginResultsDelegate {
     }//eom
     
     
-    func logOutResult(success: Bool, error: String?) {
+    func logOutResult(_ success: Bool, error: String?) {
         if error == nil {
             print("successfully signed out")
         }
