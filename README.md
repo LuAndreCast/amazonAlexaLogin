@@ -1,4 +1,6 @@
-
+###NOTE
+*Run the projects on Xcode 8 and on a device. 
+As of 11/2/16, amazon login framework crashes simulator for Alexa login*
 
 #Amazon Login (without Alexa)
 [amazon iOS documentation](http://login.amazon.com/ios)
