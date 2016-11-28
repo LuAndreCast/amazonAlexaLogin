@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zVc-Dh-SeN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Amazon Login View Controller-->
+        <scene sceneID="lxj-h4-C7a">
+            <objects>
+                <viewController storyboardIdentifier="amazonLogin" id="zVc-Dh-SeN" customClass="AmazonLoginViewController" customModule="AmazonLoginSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNm-P8-Zs9"/>
+                        <viewControllerLayoutGuide type="bottom" id="pja-YY-3Rt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DTW-A9-c1v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8y-uU-yUT">
+                                <rect key="frame" x="16" y="313.5" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.52535021550000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1q6-28-bm5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Amazon Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="zVc-Dh-SeN" eventType="touchUpInside" id="b0j-gg-S7c"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRk-bt-7Eg">
+                                <rect key="frame" x="163" y="242.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeAlexaRequest:" destination="zVc-Dh-SeN" eventType="valueChanged" id="F0l-hG-srH"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRa-Xp-Qvm">
+                                <rect key="frame" x="16" y="597" width="343" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3pX-Vf-oVb"/>
+                                </constraints>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="zVc-Dh-SeN" eventType="touchUpInside" id="n1z-OW-nGh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pja-YY-3Rt" firstAttribute="top" secondItem="cRa-Xp-Qvm" secondAttribute="bottom" constant="30" id="4ov-2Z-qhX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t8y-uU-yUT" secondAttribute="trailing" id="7TP-Aj-jLv"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="leading" secondItem="DTW-A9-c1v" secondAttribute="leadingMargin" id="9sv-N5-gmi"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="top" secondItem="hRk-bt-7Eg" secondAttribute="bottom" constant="40" id="Jry-D4-RFa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cRa-Xp-Qvm" secondAttribute="trailing" id="N2s-jg-S9B"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="centerY" secondItem="DTW-A9-c1v" secondAttribute="centerY" id="Rb1-uy-9hE"/>
+                            <constraint firstItem="hRk-bt-7Eg" firstAttribute="centerX" secondItem="DTW-A9-c1v" secondAttribute="centerX" id="Rl6-Ao-fnb"/>
+                            <constraint firstItem="t8y-uU-yUT" firstAttribute="centerX" secondItem="DTW-A9-c1v" secondAttribute="centerX" id="XjV-7d-qZL"/>
+                            <constraint firstItem="cRa-Xp-Qvm" firstAttribute="leading" secondItem="DTW-A9-c1v" secondAttribute="leadingMargin" id="g0Z-IZ-qBb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alexaRequestSwitch" destination="hRk-bt-7Eg" id="l3t-oK-9bq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sX2-kD-Rdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="721"/>
+        </scene>
+    </scenes>
+</document>
